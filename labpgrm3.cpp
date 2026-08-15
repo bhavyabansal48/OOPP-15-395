@@ -1,14 +1,29 @@
 //implement a program to demostrate inline function , default arguments and function overloading for performing arithmetic operations
 #include<iostream>
 using namespace std;
-int sum(int a=0 ,int b=0 , int c=0 , int d=0){
-    return (a+b+c+d);
+
+inline int square(int n){ //inline function
+  return n*n;
 }
+
+int addition(int a ,int b=10){  //default arguments
+  return a+b;
+}
+
+int multiply(int a,int b){  // function overloading
+  return a*b;
+}
+
+double multiply(double a ,double b){
+  return a*b; 
+}
+
 int main(){
-    cout<<"Sum when no argument is passed : " <<sum()<<endl;
-    cout<<"Sum when only one argument is passed :  "<<sum(3)<<endl;
-    cout<<"Sum when two arguments are passed    :  "<<sum(2,5)<<endl;
-    cout<<"Sum when three arguments are passed  :  "<<sum(50,200,10)<<endl;
-    cout<<"Sum when four arguments are passed   :   "<<sum(5,2,7,9)<<endl;
+  cout<<"Square of number is : "<<square(5);
+  cout<<"Addition of numbers is : "<<addition(1);
+  cout<<"Multiplication of numbers is : "<<endl;
+  cout<<multiply(3,7)<<endl;
+  cout<<multiply(3.5,9.0);
+
   return 0;
 }
