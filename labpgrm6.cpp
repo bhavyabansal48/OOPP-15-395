@@ -31,8 +31,8 @@ int main()
 {
  Demo obj1;
  obj1.display();
- Demo obj2;
- obj2.display(50);
+ Demo obj2(50);
+ obj2.display();
  Demo obj3(obj2);
  obj3.display();
     return 0;
