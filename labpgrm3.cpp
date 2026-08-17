@@ -19,8 +19,8 @@ double multiply(double a ,double b){
 }
 
 int main(){
-  cout<<"Square of number is : "<<square(5);
-  cout<<"Addition of numbers is : "<<addition(1);
+  cout<<"Square of number is : "<<square(5)<<endl;
+  cout<<"Addition of numbers is : "<<addition(1)<<endl;
   cout<<"Multiplication of numbers is : "<<endl;
   cout<<multiply(3,7)<<endl;
   cout<<multiply(3.5,9.0);
