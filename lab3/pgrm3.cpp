@@ -5,14 +5,18 @@ class operations{
     int x,y;
     public:
 
-      inline int sum(int a=0,int b=0,int c=0){
+    //   int sum(int a=0,int b=0,int c=0){
        
         
-        return a+b+c;
+    //     return a+b+c;
 
-    }
-     inline float  sum(float a,float b){
-        
+    // }
+    //  float  sum(float a,float b){
+    //     cout<<"float"<<endl;
+    //     return a+b;
+    // }
+     float  sum(int a,int b){
+        cout<<"int"<<endl;
         return a+b;
     }
 
@@ -21,10 +25,11 @@ class operations{
 
 int main(){
 operations p1,p2;
-cout<<p1.sum(1)<<endl;
+// cout<<p1.sum(1)<<endl;
 float a,b;
 a=10.5;
 b=20.6;
- cout<<p2.sum(a,b)<<endl;
+//  auto x = p2.sum{25.6,82.4};
+ auto y = p2.sum(25,5);
 return 0;
 }
